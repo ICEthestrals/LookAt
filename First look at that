@@ -1390,7 +1390,7 @@ int main()
 	}//1.12.2  结束
 	else if (input==233)//查本程序源代码 
 	{
-		ShellExecuteA(NULL, "open", "https://www.baidu.com/", NULL, NULL, SW_SHOW);
+		ShellExecuteA(NULL, "open", "https://github.com/ICEthestrals/LookAt", NULL, NULL, SW_SHOW);
 		int second=5;
 		int recycle=0;
 		for (recycle==0;recycle<=8;recycle++)
