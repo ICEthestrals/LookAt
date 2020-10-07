@@ -1,0 +1,1433 @@
+#include <bits/stdc++.h>
+#include <windows.h>
+using namespace std;
+int main()
+{
+	start: //主界面 
+	int input;
+	printf("********************************************************************\n");
+	printf("*                   欢迎使用StarFall整合包[纯净版]                 *\n");
+	printf("*                                                                  *\n");
+	printf("*              在使用整合包前,先看看怎么启动整合包吧！             *\n");
+	printf("*                    请输入你使用整合包的版本                      *\n");
+	printf("*           [18,18.9,19,19.4,110,110.2,111,111.2,112.2]            *\n");
+	printf("********************************************************************\n");
+	cin>>input;//键入数值 
+	if (input==18)//1.8 开头 
+	{
+		a:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("********************************************************************\n");
+			printf("*                   StarFall整合包[纯净版1.8]                      *\n");
+			printf("*                                                                  *\n"); 
+			printf("*       1.启动器一共有6种,都是些很火的启动器了,并且都可以用        *\n"); 
+			printf("*                [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]               *\n");
+			printf("*                    PS:输入启动器是主要大小写                     *\n");
+			printf("*                                                                  *\n");
+			printf("*                     请输入你想要打开的启动器                     *\n");
+			printf("*                    如果选错版本,输入back可返回                   *\n");
+			printf("********************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto ca;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*                   请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto a;
+				system("cls");
+			} 
+			ca:
+			printf("********************************************************************\n");
+			printf("*                   StarFall整合包[纯净版1.8]                      *\n");
+			printf("*                                                                  *\n"); 
+			printf("*   2.打开启动器后,请选择1.8-forge1.8-11.14.4.1563-LiteLoader1.8   *\n"); 
+			printf("*                         [明白了么？小天才]                       *\n");
+			printf("*                                                                  *\n");
+			printf("*                 请输入Y or N让我知道你是否明白                   *\n");
+			printf("********************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto a;
+				system("cls");
+			}
+	}//1.8  结束 
+	
+	
+	
+	
+	else if (input==18.9)//1.8.9 开头 
+	{
+		b:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.8.9]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto cb;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto b;
+				system("cls");
+			} 
+			cb:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.8.6]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto b;
+				system("cls");
+			}
+	}//1.8.9  结束
+	
+	
+	
+	
+	
+	
+	else if (input==19)//1.9 开头 
+	{
+		c:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                     StarFall整合包[纯净版1.9]                        *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto cc;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto c;
+				system("cls");
+			} 
+			cc:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.8.6]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto c;
+				system("cls");
+			}
+	}//1.9  结束
+	
+	
+	
+	
+	
+	else if (input==19.4)//1.9.4 开头 
+	{
+		d:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.9.4]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto cd;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto d;
+				system("cls");
+			} 
+			cd:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.9.4]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto d;
+				system("cls");
+			}
+	}//1.9.4  结束
+	
+	
+	
+	
+	
+	
+	else if (input==110)//1.10 开头 
+	{
+		e:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                     StarFall整合包[纯净版1.10]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto ce;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto e;
+				system("cls");
+			} 
+			ce:
+			printf("************************************************************************\n");
+			printf("*                     StarFall整合包[纯净版1.10]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto e;
+				system("cls");
+			}
+	}//1.10  结束
+	
+	
+	
+	
+	
+	else if (input==110.2)//1.10.2 开头 
+	{
+		i:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.10.2]                      *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto ci;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto i;
+				system("cls");
+			} 
+			ci:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.10.2]                      *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto i;
+				system("cls");
+			}
+	}//1.10.2  结束
+	
+	
+	
+	
+	
+	
+	else if (input==111)//1.11 开头 
+	{
+		f:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.11]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto cf;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto f;
+				system("cls");
+			} 
+			cf:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.11]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto f;
+				system("cls");
+			}
+	}//1.11  结束
+	
+	
+	
+	
+	
+	else if (input==111.2)//1.11.2 开头 
+	{
+		g:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.11.2]                      *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto cg;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto g;
+				system("cls");
+			} 
+			cg:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.8.6]                       *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto g;
+				system("cls");
+			}
+	}//1.11.2  结束
+	
+	
+	
+	
+	
+	
+	else if (input==112.2)//1.12.2 开头 
+	{
+		h:
+			system("cls");
+			string open="";
+			string choose="";
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.12.2]                      *\n");
+			printf("*                                                                      *\n"); 
+			printf("*         1.启动器一共有6种,都是些很火的启动器了,并且都可以用          *\n"); 
+			printf("*                  [BakaXL,BMCLNG,HMCL,MCCL,Nsiso,PCL]                 *\n");
+			printf("*                      PS:输入启动器是主要大小写                       *\n");
+			printf("*                                                                      *\n");
+			printf("*                       请输入你想要打开的启动器                       *\n");
+			printf("*                      如果选错版本,输入back可返回                     *\n");
+			printf("************************************************************************\n");
+			cin>>open;
+			if (open=="BakaXL"||open=="BMCLNG"||open=="HMCL"||open=="MCCL"||open=="Nsiso"||open=="PCL")
+			{
+				goto ch;
+				system("cls");
+			}
+			else if (open=="back") 
+			{
+				goto start;
+				system("cls");
+			}
+			else 
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("**********************************************************************\n");
+					printf("*                     请重新输入[可能没有此启动器]                   *\n");
+					cout<<"*                              还有"<<second<<"秒返回                             *\n" ;
+					printf("**********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto h;
+				system("cls");
+			} 
+			ch:
+			printf("************************************************************************\n");
+			printf("*                    StarFall整合包[纯净版1.12.2]                      *\n");
+			printf("*                                                                      *\n"); 
+			printf("*  2.打开启动器后,请选择1.8.9-forge1.8.9-11.14.4.1563-LiteLoader1.8.9  *\n"); 
+			printf("*                           [明白了么？小天才]                         *\n");
+			printf("*                                                                      *\n");
+			printf("*                   请输入Y or N让我知道你是否明白                     *\n");
+			printf("************************************************************************\n");
+			cin>>choose;
+			string exe;
+			if ((open=="BakaXL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto gamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto gamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto gamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto gamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto gamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="Y"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto gamehappy; 
+			}
+
+			else if ((open=="BakaXL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BakaXL].exe", NULL, NULL, SW_SHOW);
+				exe="BakaXL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="BMCLNG")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[BMCLNG].exe", NULL, NULL, SW_SHOW);
+				exe="BMCLNG";
+				goto Ngamehappy; 
+			}
+			else if ((open=="HMCL")&&(choose=="N"||choose=="y"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[HMCL].exe", NULL, NULL, SW_SHOW);
+				exe="HMCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="MCCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[MCCL].exe", NULL, NULL, SW_SHOW);
+				exe="MCCL";
+				goto Ngamehappy; 
+			}
+			else if ((open=="Nsiso")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[Nsiso].exe", NULL, NULL, SW_SHOW);
+				exe="Nsiso";
+				goto Ngamehappy; 
+			}
+			else if ((open=="PCL")&&(choose=="N"||choose=="n"))
+			{
+				ShellExecuteA(NULL, "open", "启动器[PCL].exe", NULL, NULL, SW_SHOW);
+				exe="PCL";
+				goto Ngamehappy; 
+			}
+			else
+			{
+				int second=5;
+				int recycle=0;
+				for (recycle==0;recycle<=8;recycle++)
+				{
+					system("cls");
+					printf("********************************************************************\n");
+					printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
+					cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+					printf("********************************************************************\n");
+					second=second-1;
+					recycle=recycle+1;
+					Sleep(1000);
+				}
+				goto h;
+				system("cls");
+			}
+	}//1.12.2  结束
+	else if (input==233)//查本程序源代码 
+	{
+		ShellExecuteA(NULL, "open", "https://www.baidu.com/", NULL, NULL, SW_SHOW);
+		int second=5;
+		int recycle=0;
+		for (recycle==0;recycle<=8;recycle++)
+		{
+			system("cls");
+			printf("********************************************************************\n");
+			printf("*                         查源代码网页已打开                       *\n");
+			cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+			printf("********************************************************************\n");
+			second=second-1;
+			recycle=recycle+1;
+			Sleep(1000);
+		}
+		system("cls");
+		goto start;
+	}
+	else//数值错误提示 
+	{
+		int second=5;
+		int recycle=0;
+		for (recycle==0;recycle<=8;recycle++)
+		{
+			system("cls");
+			printf("********************************************************************\n");
+			printf("*                  请输入正确的数值[主要 . 的位置]                 *\n");
+			cout<<"*                            还有"<<second<<"秒返回                           *\n" ;
+			printf("********************************************************************\n");
+			second=second-1;
+			recycle=recycle+1;
+			Sleep(1000);
+		}
+		system("cls");
+		goto start;
+	} 
+	gamehappy://输入Y是祝福玩家 
+		printf("1");
+	Ngamehappy://输入N是"祝福"玩家 
+		printf("1");
+	return 0;
+}
