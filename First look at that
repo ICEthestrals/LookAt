@@ -53,8 +53,8 @@ start: //主界面
 				printf("*                   请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto a;
@@ -203,8 +203,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto a;
@@ -253,8 +253,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto b;
@@ -403,8 +403,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto b;
@@ -455,8 +455,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto c;
@@ -605,8 +605,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto c;
@@ -656,8 +656,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto d;
@@ -806,8 +806,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto d;
@@ -858,8 +858,8 @@ start: //主界面
 				printf("*                          请重新输入[可能没有此启动器]                        *\n");
 				cout << "*                                   还有" << second << "秒返回                                  *\n";
 				printf("********************************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto e;
@@ -1008,8 +1008,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto e;
@@ -1059,8 +1059,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto i;
@@ -1209,8 +1209,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto i;
@@ -1261,8 +1261,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto f;
@@ -1411,8 +1411,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto f;
@@ -1462,8 +1462,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto g;
@@ -1612,8 +1612,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto g;
@@ -1664,8 +1664,8 @@ start: //主界面
 				printf("*                     请重新输入[可能没有此启动器]                   *\n");
 				cout << "*                              还有" << second << "秒返回                             *\n";
 				printf("**********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+	
 				Sleep(1000);
 			}
 			goto h;
@@ -1814,8 +1814,8 @@ start: //主界面
 				printf("*   如果听明白了请输入Y or y或者N or n[请不要输入看不懂的东西]     *\n");
 				cout << "*                            还有" << second << "秒返回                           *\n";
 				printf("********************************************************************\n");
-				second = second - 1;
-				recycle = recycle + 1;
+				second -=second;
+
 				Sleep(1000);
 			}
 			goto h;
@@ -1834,8 +1834,7 @@ start: //主界面
 			printf("*                         查源代码网页已打开                       *\n");
 			cout << "*                            还有" << second << "秒返回                           *\n";
 			printf("********************************************************************\n");
-			second = second - 1;
-			recycle = recycle + 1;
+			second -=second;
 			Sleep(1000);
 		}
 		system("cls");
@@ -1852,8 +1851,7 @@ start: //主界面
 			printf("*                  请输入正确的数值[注意 . 的位置]                 *\n");
 			cout << "*                            还有" << second << "秒返回                           *\n";
 			printf("********************************************************************\n");
-			second = second - 1;
-			recycle = recycle + 1;
+			second -=second;
 			Sleep(1000);
 		}
 		system("cls");
